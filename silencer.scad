@@ -313,7 +313,7 @@ module s_nut() {
 		scale([silencer_thread_scale2fit,silencer_thread_scale2fit,1.0]) {
 			translate([0,0,nut_zdecal/2])
 			union() {
-				nut(silencer_thread_type, 100, nut_dia);
+				nut(silencer_thread_type, silencer_thread_len, nut_dia);
 			};
 		}
 		translate([0,0,5000+silencer_thread_len]) cube(10000,center=true);
